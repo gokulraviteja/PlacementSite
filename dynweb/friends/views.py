@@ -5,8 +5,8 @@ from friends.models import Object,Url,Mate
 from getpass import getpass
 import requests
 import collections
-usr='personalbgokulravi1999@gmail.com'
-pwd='gokulraviB1'
+usr='xxx'
+pwd='xxx'
 #options=webdriver.ChromeOptions()
 #options.add_argument('--headless')
 #driver=webdriver.Chrome('C:\\Users\\bellapukonda\\Desktop\\auto\\chromedriver.exe',options=options)
