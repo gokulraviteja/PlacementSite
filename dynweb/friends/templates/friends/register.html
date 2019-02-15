@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+  </head>
+  <body>
+<form action="../friendspage/" method="post">
+  {% csrf_token %}
+
+USERNAME :<input type="text" required name="username" placeholder="username"><br><br>
+MOBILE NO :<input type="text" name="mobno"  placeholder="MOB NO" required><br><br>
+
+<select  name="dropdown" required >
+
+
+{% for ele1 in others %}
+
+  <option value="{{ele1}}">{{ele1}}</option>
+{% endfor %}
+
+
+</select>
+
+<!--
+<select>
+  <optgroup label="ME">
+    <option value="ME-a1">a1</option>
+    <option value="ME-a2">a2</option>
+    <option value="ME-a3">a3</option>
+  </optgroup>
+
+  <optgroup label="BE">
+    <option value="BE-b1">b1</option>
+    <option value="BE-b2">b2</option>
+    <option value="BE-b3">b3</option>
+  </optgroup>
+
+</select> -->
+
+
+
+
+<button type="submit" name="register">Register</button>
+
+</form>
+
+  </body>
+</html>

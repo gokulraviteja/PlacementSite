@@ -1,0 +1,20 @@
+
+<h1>VIEW ALL FRIENDS REGISTERED IN BRANCH </h1>
+
+<br><br>
+
+<form action="../display/" method="post">
+  {% csrf_token %}
+<select  name="dropdown" required >
+
+
+{% for ele1 in others %}
+
+  <option value="{{ele1}}">{{ele1}}</option>
+{% endfor %}
+
+</select>
+
+<br><br>
+<button type="submit" >View</button>
+</form>
